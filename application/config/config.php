@@ -549,3 +549,20 @@ $config['service_urls'] = [
     'pelatihan_blk' => 'https://disnaker.semarangkota.go.id/layanan/37SuIkS8q76XSIZJxrHDhEOXuqpQByx58gnz6sBket0OQ1ov0ge2u1puLt7tV6YL',
     'hubungan_industrial' => 'https://disnaker.semarangkota.go.id/layanan/2mFwm5h6VHIongDOult53LCS7PQuirccLGlhMPF5s4vzSTEkOC7KXunbrcVgIsld',
 ];
+
+/*
+|--------------------------------------------------------------------------
+| DISNAKER Contact Information
+|--------------------------------------------------------------------------
+*/
+$config['disnaker_alamat'] = 'Jl. Ki Mangunsarkoro, No. 21, Kel. Karangkidul, Kec. Semarang Tengah, Kota Semarang.';
+$config['disnaker_email'] = 'disnaker@semarangkota.go.id';
+$config['disnaker_telp'] = '(024) 8440335';
+$config['disnaker_fax'] = '62248440335';
+$config['disnaker_jam_operasional'] = [
+    'Senin'  => '08.00 - 16.00',
+    'Selasa' => '08.00 - 16.00',
+    'Rabu'   => '08.00 - 16.00',
+    'Kamis'  => '08.00 - 16.00',
+    'Jumat'  => '07.30 - 14.00',
+];

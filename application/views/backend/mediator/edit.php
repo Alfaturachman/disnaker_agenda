@@ -21,7 +21,7 @@
                 <option value="Ekonomi" <?= ($mediator['bidang'] == 'Ekonomi') ? 'selected' : ''; ?>>Ekonomi</option>
                 <option value="Pendidikan" <?= ($mediator['bidang'] == 'Pendidikan') ? 'selected' : ''; ?>>Pendidikan</option>
             </select>
-            <?php echo form_error('bidang', '<small class="text-danger">', '</small>'); ?>
+            <?= form_error('bidang', '<small class="text-danger">', '</small>'); ?>
         </div>
         <div class="form-group">
             <label>Email</label>

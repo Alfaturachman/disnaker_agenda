@@ -90,7 +90,20 @@
         var tanggalMediasiField = document.getElementById("tanggal_mediasi");
 
         if (agendaId) {
-            var agendaData = <?php echo json_encode($agenda_mediasi); ?>;
+            var agendaData = <?php
+        $filtered = array_map(function($a) {
+            return [
+                'id' => $a->id,
+                'nama_pihak_satu' => $a->nama_pihak_satu,
+                'nama_pihak_dua' => $a->nama_pihak_dua,
+                'jenis_kasus' => $a->jenis_kasus,
+                'nama_kasus' => $a->nama_kasus,
+                'tgl_mediasi' => $a->tgl_mediasi,
+                'waktu_mediasi' => $a->waktu_mediasi,
+            ];
+        }, $agenda_mediasi);
+        echo json_encode($filtered);
+    ?>;
             var selectedAgenda = agendaData.find(function(agenda) {
                 return agenda.id == agendaId;
             });

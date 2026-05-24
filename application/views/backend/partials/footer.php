@@ -2,7 +2,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; DISNAKER 2024</span>
+                        <span>Copyright &copy; DISNAKER <?= date('Y') ?></span>
                     </div>
                 </div>
             </footer>
@@ -28,13 +28,6 @@
 
             <!-- Custom scripts for all pages-->
             <script src="<?= base_url('assets/sbadmin/') ?>js/sb-admin-2.min.js"></script>
-
-            <!-- Page level plugins -->
-            <script src="<?= base_url('assets/sbadmin/') ?>vendor/chart.js/Chart.min.js"></script>
-
-            <!-- Page level custom scripts -->
-            <script src="<?= base_url('assets/sbadmin/') ?>js/demo/chart-area-demo.js"></script>
-            <script src="<?= base_url('assets/sbadmin/') ?>js/demo/chart-pie-demo.js"></script>
 
             </body>
 

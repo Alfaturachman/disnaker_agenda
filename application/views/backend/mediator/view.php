@@ -58,10 +58,10 @@
                                     <td><?= htmlspecialchars($media['email']); ?></td>
                                     <td>
                                         <div class="aksi-icons">
-                                            <a href="<?= base_url('mediator/edit/' . $media['id_mediator']); ?>" class="btn btn-warning btn-sm" title="Edit">
+                                            <a href="<?= base_url('mediator/edit/' . $media['id_mediator']); ?>" class="btn btn-warning btn-sm" aria-label="Edit mediator">
                                                 ✏️
                                             </a>
-                                            <a href="<?= base_url('mediator/delete/' . $media['id_mediator']); ?>" class="btn btn-danger btn-sm" title="Hapus" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">
+                                            <a href="<?= base_url('mediator/delete/' . $media['id_mediator']); ?>" class="btn btn-danger btn-sm" aria-label="Hapus mediator" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">
                                                 🗑️
                                             </a>
                                         </div>

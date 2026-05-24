@@ -31,6 +31,16 @@ class Agenda_model extends CI_Model
         return $this->db->get()->row_array();
     }
 
+    public function get_archived_agendas()
+    {
+        $this->db->select('agenda_mediasi.*, mediator.nama as nama_mediator');
+        $this->db->from('agenda_mediasi');
+        $this->db->join('mediator', 'mediator.id_mediator = agenda_mediasi.id_mediator', 'left');
+        $this->db->where_in('agenda_mediasi.status', ['disetujui', 'ditolak']);
+        $this->db->order_by('agenda_mediasi.tgl_mediasi', 'DESC');
+        return $this->db->get()->result_array();
+    }
+
     public function get_mediators_agenda()
     {
         return $this->db->get('mediator')->result_array();

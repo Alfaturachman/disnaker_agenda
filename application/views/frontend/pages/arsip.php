@@ -1,185 +1,209 @@
-<section class="single-page-header">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h2>Our Services</h2>
-				<ol class="breadcrumb header-bradcrumb justify-content-center">
-					<li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
-					<li class="breadcrumb-item active" aria-current="page">Our Services</li>
-				</ol>
-			</div>
-		</div>
-	</div>
+<style>
+    .arsip-header {
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+        padding: 4rem 0 3rem;
+        text-align: center;
+        margin-top: -1px;
+    }
+
+    .arsip-header h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 0.5rem;
+    }
+
+    .arsip-header p {
+        font-size: 1rem;
+        color: #94a3b8;
+    }
+
+    .arsip-section {
+        padding: 3rem 0 4rem;
+    }
+
+    .arsip-table-wrapper {
+        background: #fff;
+        border: 1px solid #f1f5f9;
+        border-radius: 1.25rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        overflow-x: auto;
+    }
+
+    .arsip-table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 680px;
+    }
+
+    .arsip-table thead th {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: #94a3b8;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        padding: 1rem 1.25rem;
+        background: #f8fafc;
+        border-bottom: 1px solid #f1f5f9;
+        text-align: left;
+        white-space: nowrap;
+    }
+
+    .arsip-table tbody td {
+        font-size: 0.875rem;
+        color: #334155;
+        padding: 0.875rem 1.25rem;
+        border-bottom: 1px solid #f8fafc;
+        vertical-align: middle;
+    }
+
+    .arsip-table tbody tr:last-child td {
+        border-bottom: none;
+    }
+
+    .arsip-table tbody tr:hover {
+        background: #f8fafc;
+    }
+
+    .arsip-table .status-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.375rem;
+        padding: 0.25rem 0.75rem;
+        border-radius: 100px;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+
+    .arsip-table .status-badge.disetujui {
+        background: #f0fdf4;
+        color: #16a34a;
+    }
+
+    .arsip-table .status-badge.ditolak {
+        background: #fef2f2;
+        color: #dc2626;
+    }
+
+    .arsip-table .btn-detail {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.375rem;
+        padding: 0.375rem 0.875rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: #2563eb;
+        background: #eff6ff;
+        border: 1px solid #bfdbfe;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+
+    .arsip-table .btn-detail:hover {
+        background: #dbeafe;
+        text-decoration: none;
+        color: #1d4ed8;
+    }
+
+    .arsip-empty {
+        text-align: center;
+        padding: 4rem 1rem;
+    }
+
+    .arsip-empty i {
+        font-size: 3rem;
+        color: #cbd5e1;
+        margin-bottom: 1rem;
+    }
+
+    .arsip-empty h3 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: #0f172a;
+        margin-bottom: 0.5rem;
+    }
+
+    .arsip-empty p {
+        font-size: 0.875rem;
+        color: #64748b;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 640px) {
+        .arsip-header h1 {
+            font-size: 1.5rem;
+        }
+        .arsip-table-wrapper {
+            border-radius: 0.75rem;
+        }
+    }
+</style>
+
+<section class="arsip-header">
+    <div class="container">
+        <h1>Arsip Mediasi</h1>
+        <p>Riwayat permohonan mediasi yang telah selesai</p>
+    </div>
 </section>
 
-<!-- Start Services Section
-==================================== -->
-
-<section class="services" id="services">
-	<div class="container">
-		<div class="row justify-content-center">
-			<!-- section title -->
-			<div class="col-xl-6 col-lg-8">
-				<div class="title text-center">
-					<h2>Our Services</h2>
-					<p>Vestibulum nisl tortor, consectetur quis imperdiet bibendum, laoreet sed arcu. Sed condimentum iaculis ex,
-						in faucibus lorem accumsan non. Donec mattis tincidunt metus. Morbi sed tortor a risus luctus dignissim.</p>
-					<div class="border"></div>
-				</div>
-			</div>
-			<!-- /section title -->
-		</div>
-		<div class="row no-gutters">
-
-			<!-- Single Service Item -->
-			<div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-				<div class="service-block p-4 color-bg text-center">
-					<div class="service-icon text-center">
-						<i class="tf-ion-ios-copy-outline"></i>
-					</div>
-					<h3>WordPress Theme</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam
-						iaculis arcu at mauris dapibus consectetur.</p>
-				</div>
-			</div>
-			<!-- End Single Service Item -->
-
-			<!-- Single Service Item -->
-			<div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-				<div class="service-block p-4 text-center">
-					<div class="service-icon text-center">
-						<i class="tf-ion-ios-alarm-outline"></i>
-					</div>
-					<h3>Responsive Design</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam
-						iaculis arcu at mauris dapibus consectetur.</p>
-				</div>
-			</div>
-			<!-- End Single Service Item -->
-
-			<!-- Single Service Item -->
-			<div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-				<div class="service-block p-4 color-bg text-center">
-					<div class="service-icon text-center">
-						<i class="tf-ion-ios-book-outline"></i>
-					</div>
-					<h3>Media &amp; Advertisement</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam
-						iaculis arcu at mauris dapibus consectetur.</p>
-				</div>
-			</div>
-			<!-- End Single Service Item -->
-
-			<!-- Single Service Item -->
-			<div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-				<div class="service-block p-4  text-center">
-					<div class="service-icon text-center">
-						<i class="tf-ion-ios-briefcase-outline"></i>
-					</div>
-					<h3>Graphic Design</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam
-						iaculis arcu at mauris dapibus consectetur.</p>
-				</div>
-			</div>
-			<!-- End Single Service Item -->
-
-			<!-- Single Service Item -->
-			<div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-				<div class="service-block p-4 color-bg text-center">
-					<div class="service-icon text-center">
-						<i class="tf-ion-ios-crop"></i>
-					</div>
-					<h3>Apps Development</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam
-						iaculis arcu at mauris dapibus consectetur.</p>
-				</div>
-			</div>
-			<!-- End Single Service Item -->
-
-			<!-- Single Service Item -->
-			<div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-				<div class="service-block p-4 text-center">
-					<div class="service-icon text-center">
-						<i class="tf-ion-ios-home-outline"></i>
-					</div>
-					<h3>Networking</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam
-						iaculis arcu at mauris dapibus consectetur.</p>
-				</div>
-			</div>
-			<!-- End Single Service Item -->
-
-		</div> <!-- End row -->
-	</div> <!-- End container -->
-</section> <!-- End section -->
-
-<!--
-Start Counter Section
-==================================== -->
-<section class="counter-wrapper section-sm">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-xl-6 col-lg-8 text-center">
-				<div class="title">
-					<h2>Award-Winning Agency</h2>
-					<p>Vestibulum nisl tortor, consectetur quis imperdiet bibendum, laoreet sed arcu. Sed condimentum iaculis ex, in faucibus lorem accumsan non. Donec mattis tincidunt metus. Morbi sed tortor a risus luctus dignissim.</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<!-- first count item -->
-			<div class="col-md-3 col-sm-6 col-xs-6 text-center ">
-				<div class="counters-item">
-					<i class="tf-ion-ios-alarm-outline"></i>
-					<div>
-						<span class="counter" data-count="150">0</span>
-					</div>
-					<h3>Happy Clients</h3>
-				</div>
-			</div>
-			<!-- end first count item -->
-
-			<!-- second count item -->
-			<div class="col-md-3 col-sm-6 col-xs-6 text-center ">
-				<div class="counters-item">
-					<i class="tf-ion-ios-analytics-outline"></i>
-					<div>
-						<span class="counter" data-count="130">0</span>
-					</div>
-					<h3>Projects completed</h3>
-				</div>
-			</div>
-			<!-- end second count item -->
-
-			<!-- third count item -->
-			<div class="col-md-3 col-sm-6 col-xs-6 text-center ">
-				<div class="counters-item">
-					<i class="tf-ion-ios-compose-outline"></i>
-					<div>
-						<span class="counter" data-count="99">0</span>
-					</div>
-					<h3>Positive feedback</h3>
-
-				</div>
-			</div>
-			<!-- end third count item -->
-
-			<!-- fourth count item -->
-			<div class="col-md-3 col-sm-6 col-xs-6 text-center ">
-				<div class="counters-item kill-border">
-					<i class="tf-ion-ios-bolt-outline"></i>
-					<div>
-						<span class="counter" data-count="250">0</span>
-					</div>
-					<h3>Cups of Coffee</h3>
-				</div>
-			</div>
-			<!-- end fourth count item -->
-		</div> <!-- end row -->
-	</div> <!-- end container -->
-</section> <!-- end section -->
-
-</div> <!-- end col lg 12 -->
-</div> <!-- End row -->
-</div> <!-- End container -->
-</section> <!-- End Section -->
+<section class="arsip-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="arsip-table-wrapper">
+                    <?php if (!empty($arsip)) : ?>
+                        <table class="arsip-table">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nomor Mediasi</th>
+                                    <th>Nama Kasus</th>
+                                    <th>Pihak 1</th>
+                                    <th>Pihak 2</th>
+                                    <th>Mediator</th>
+                                    <th>Tanggal</th>
+                                    <th>Status</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php $no = 1; ?>
+                                <?php foreach ($arsip as $a) : ?>
+                                    <tr>
+                                        <td><?= $no++; ?></td>
+                                        <td><?= htmlspecialchars($a['nomor_mediasi']); ?></td>
+                                        <td><?= htmlspecialchars($a['nama_kasus']); ?></td>
+                                        <td><?= htmlspecialchars($a['nama_pihak_satu']); ?></td>
+                                        <td><?= htmlspecialchars($a['nama_pihak_dua']); ?></td>
+                                        <td><?= htmlspecialchars($a['nama_mediator']); ?></td>
+                                        <td><?= htmlspecialchars($a['tgl_mediasi']); ?></td>
+                                        <td>
+                                            <span class="status-badge <?= $a['status']; ?>">
+                                                <i class="fas fa-circle"></i>
+                                                <?= ucfirst(htmlspecialchars($a['status'])); ?>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a href="<?= site_url('agenda/detail/' . $a['id']); ?>" class="btn-detail">
+                                                <i class="fas fa-eye"></i>
+                                                Detail
+                                            </a>
+                                        </td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    <?php else : ?>
+                        <div class="arsip-empty">
+                            <i class="fas fa-box-archive"></i>
+                            <h3>Belum Ada Arsip</h3>
+                            <p>Belum ada permohonan mediasi yang selesai atau ditolak. Arsip akan muncul setelah mediator memproses permohonan.</p>
+                        </div>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

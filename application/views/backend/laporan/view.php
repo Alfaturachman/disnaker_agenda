@@ -51,11 +51,11 @@
                                     <td><?= htmlspecialchars($laporan['jenis_kasus']); ?></td>
                                     <td><?= htmlspecialchars($laporan['hasil_mediasi']); ?></td>
                                     <td>
-                                        <a href="<?= base_url('laporan/edit/' . $laporan['id_laporan']); ?>" class="btn btn-warning btn-sm">
-                                            ✏️ <!-- Emoji untuk edit -->
+                                        <a href="<?= base_url('laporan/edit/' . $laporan['id_laporan']); ?>" class="btn btn-warning btn-sm" aria-label="Edit laporan">
+                                            ✏️
                                         </a>
-                                        <a href="<?= base_url('laporan/delete/' . $laporan['id_laporan']); ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">
-                                            🗑️ <!-- Emoji untuk hapus -->
+                                        <a href="<?= base_url('laporan/delete/' . $laporan['id_laporan']); ?>" class="btn btn-danger btn-sm" aria-label="Hapus laporan" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">
+                                            🗑️
                                         </a>
                                     </td>
                                 </tr>
